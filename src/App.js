@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import foto from './assets/profile.png';
 export default function App() {
-  return <h1>Hello Rocketseat</h1>;
+  return <img src={foto} />;
 }

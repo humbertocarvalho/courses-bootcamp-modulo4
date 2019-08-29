@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // import { Container } from './styles';
 
-export default function TechItem({ tech, onDelete }) {
+function TechItem({ tech, onDelete }) {
   return (
     <li>
       {tech}
@@ -12,3 +13,14 @@ export default function TechItem({ tech, onDelete }) {
     </li>
   );
 }
+
+// TechItem.defaultProps = {
+//   tech: 'oculot'
+// };
+
+TechItem.propTypes = {
+  tech: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired
+};
+
+export default TechItem;
